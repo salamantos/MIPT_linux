@@ -20,5 +20,5 @@ if [ $# -ge 3 ]; then
 	rm $2.tar &> /dev/null
 	echo "done"
 else
-	echo "Bad"
+	printf "Usage: ./backup_and_encrypt.sh <dir_for_search> <archive_name> <extension_1>[, <extension_2, ..., <extension_n>]\nExample: ./backup_and_encrypt.sh ~/kek backup_kek_dir txt py cpp"
 fi
